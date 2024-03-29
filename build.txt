@@ -1,0 +1,3 @@
+displayName = Can't Take My Hearts
+author = Potat369
+version = 0.1
