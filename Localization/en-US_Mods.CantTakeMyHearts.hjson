@@ -1,1 +1,15 @@
-# This file will automatically update with entries for new content after a build and reload
+Configs: {
+	CantTakeMyHeartsConfig: {
+		DisplayName: Cant Take My Hearts Config
+
+		HeartItems: {
+			Label: Heart Items
+			Tooltip: ""
+		}
+
+		ManaItems: {
+			Label: Mana Items
+			Tooltip: ""
+		}
+	}
+}
