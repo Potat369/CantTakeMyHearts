@@ -21,7 +21,7 @@ namespace CantTakeMyHearts
 
         public override bool CanPickup(Item item, Player player)
         {
-            return player.statLife < player.statLifeMax2;
+            return player.statLife <= player.statLifeMax2 - ModContent.GetInstance<CantTakeMyHeartsConfig>().HealthDeficit;
         }
     }
 }

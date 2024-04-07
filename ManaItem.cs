@@ -8,7 +8,7 @@ namespace CantTakeMyHearts
     internal class ManaItem : GlobalItem
     {
         public override bool AppliesToEntity(Item entity, bool lateInstantiation) 
-        { 
+        {
             foreach (ItemDefinition itemDefinition in ModContent.GetInstance<CantTakeMyHeartsConfig>().ManaItems)
             {
                 if (entity.type == itemDefinition.Type)
@@ -21,7 +21,7 @@ namespace CantTakeMyHearts
 
         public override bool CanPickup(Item item, Player player)
         {
-            return player.statMana < player.statManaMax2;
+            return player.statMana <= (player.statManaMax2 - ModContent.GetInstance<CantTakeMyHeartsConfig>().ManaDificit);
         }
     }
 }
