@@ -11,5 +11,15 @@ Configs: {
 			Label: Mana Items
 			Tooltip: ""
 		}
+
+		healthDeficit: {
+			Label: health Deficit
+			Tooltip: ""
+		}
+
+		manaDificit: {
+			Label: mana Dificit
+			Tooltip: ""
+		}
 	}
 }
